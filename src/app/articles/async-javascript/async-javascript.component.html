@@ -22,9 +22,9 @@
 
         <h2>JavaScript Under the Hood:</h2>
         <mat-list class="worm-list">
-          <mat-list-item><strong>1) Thread of Execution</strong></mat-list-item>
-          <mat-list-item><strong>2) Memory</strong></mat-list-item>
-          <mat-list-item><strong>3) Call Stack</strong></mat-list-item>
+          <mat-list-item>1) Thread of Execution</mat-list-item>
+          <mat-list-item>2) Memory</mat-list-item>
+          <mat-list-item>3) Call Stack</mat-list-item>
 
         </mat-list>
         <p>
@@ -40,10 +40,37 @@
       <section>
         <h2>What the heck? That doesn't make sense...I thought JavaScript executed code in the order it appears...</h2>
         <p>
-          JavaScript is not enough
+          JavaScript is not enough...we need add some more components to our three from above:
         </p>
+        <mat-list class="worm-list">
+          <mat-list-item>
+            <strong>1) Web Browser</strong>&nbsp;- JavaScript plus more:
+          </mat-list-item>
+          <mat-list-item class="indented-list-item">
+            Network Requests (Fetch, XHR)
+          </mat-list-item>
+          <mat-list-item class="indented-list-item">
+            DOM (document)
+          </mat-list-item>
+          <mat-list-item class="indented-list-item">
+            Local Storage & Session Storage (localStorage, sessionStorage)
+          </mat-list-item>
+          <mat-list-item class="indented-list-item">
+            Timer (setTimeout)
+          </mat-list-item>
+          <mat-list-item class="indented-list-item">
+            Others browser features include dev tools, console, sockets
+          </mat-list-item>
+
+          <mat-list-item><strong>2) Promises</strong></mat-list-item>
+          <mat-list-item><strong>3) Event Loop</strong></mat-list-item>
+          <mat-list-item><strong>4) Task Queue</strong></mat-list-item>
+          <mat-list-item><strong>5) Micro Task Queue</strong></mat-list-item>
+        </mat-list>
 
       </section>
+
+      <worm-example-three></worm-example-three>
 
     </mat-card-content>
   </mat-card>
