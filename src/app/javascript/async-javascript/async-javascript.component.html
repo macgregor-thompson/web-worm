@@ -1,0 +1,50 @@
+<div class="container">
+  <mat-card class="worm-card">
+    <mat-card-header class="justify-between">
+      <i class="fab fa-js-square header-icon"></i>
+      <h1 class="card-titles">
+        Asynchronous JavaScript
+      </h1>
+      <div class="fill-remaining-space"></div>
+      <mat-chip-list>
+        <mat-chip selected color="accent">6/16/2020</mat-chip>
+      </mat-chip-list>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <section>
+        <h2>Asynchronicity is the backbone of how modern web applications work...yet JavaScript is:</h2>
+        <mat-list class="worm-list">
+          <mat-list-item><strong>Single Threaded</strong>&nbsp;- executes one line at a time</mat-list-item>
+          <mat-list-item><strong>Synchronous in nature</strong>&nbsp;- executes code in the order it appears
+          </mat-list-item>
+        </mat-list>
+
+        <h2>JavaScript Under the Hood:</h2>
+        <mat-list class="worm-list">
+          <mat-list-item><strong>1) Thread of Execution</strong></mat-list-item>
+          <mat-list-item><strong>2) Memory</strong></mat-list-item>
+          <mat-list-item><strong>3) Call Stack</strong></mat-list-item>
+
+        </mat-list>
+        <p>
+          So what happens if we have a task that is accessing Twitter that takes a long time?
+          What if we have code we want to run in the meantime? When will everything execute?
+        </p>
+      </section>
+
+      <worm-example-one></worm-example-one>
+
+      <worm-example-two></worm-example-two>
+
+      <section>
+        <h2>What the heck? That doesn't make sense...I thought JavaScript executed code in the order it appears...</h2>
+        <p>
+          JavaScript is not enough
+        </p>
+
+      </section>
+
+    </mat-card-content>
+  </mat-card>
+</div>

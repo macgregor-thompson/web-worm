@@ -1,0 +1,184 @@
+@import './colors';
+@import 'media-queries';
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.green {
+  &, & .mat-select-value, & mat-icon {
+    color: $green !important;
+  }
+}
+
+.yellow {
+  &, & .mat-select-value, & mat-icon {
+    color: $yellow !important;
+  }
+}
+
+.red {
+  &, & .mat-select-value, & mat-icon {
+    color: $red !important;
+  }
+}
+
+.orange {
+  &, & .mat-select-value, & mat-icon {
+    color: $orange !important;
+  }
+}
+
+.blue {
+  &, & .mat-select-value, & mat-icon {
+    color: $blue !important;
+  }
+}
+
+.muted {
+  color: rgba(0, 0, 0, 0.54) !important;
+}
+
+.flex1 {
+  flex: 1 !important;
+}
+
+.flex2 {
+  flex: 2 !important;
+}
+
+.flex3 {
+  flex: 3 !important;
+}
+
+.flex4 {
+  flex: 4 !important;
+}
+
+.flex5 {
+  flex: 5 !important;
+}
+
+.flex6 {
+  flex: 6 !important;
+}
+
+.flex7 {
+  flex: 7 !important;
+}
+
+.flex8 {
+  flex: 8 !important;
+}
+
+.flex9 {
+  flex: 9 !important;
+}
+
+.flex10 {
+  flex: 10 !important;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.top-space-0 {
+  margin-top: 0 !important;
+}
+
+.top-space-15 {
+  margin-top: 15px !important;
+}
+
+.top-space-30 {
+  margin-top: 30px !important;
+}
+
+.top-space-40 {
+  margin-top: 40px !important;
+}
+
+.bottom-space-0 {
+  margin-bottom: 0 !important;
+}
+
+.bottom-space-10 {
+  margin-bottom: 10px !important;
+}
+
+.bottom-space-15 {
+  margin-bottom: 15px !important;
+}
+
+.bottom-space-30 {
+  margin-bottom: 30px !important;
+}
+
+.bottom-space-75 {
+  margin-bottom: 75px !important;
+}
+
+.right-space-0 {
+  margin-right: 0 !important;
+}
+
+.right-space-10 {
+  margin-right: 10px !important;
+}
+
+.right-space-15 {
+  margin-right: 15px !important;
+}
+
+.left-space-16 {
+  margin-left: 16px !important;
+}
+
+.text-cursor:hover {
+  cursor: text;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.w180 {
+  width: 180px !important;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.hide-lt-md {
+  @include lt-md() {
+    display: none;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-variant-caps: titling-caps;
+}

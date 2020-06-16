@@ -1,0 +1,17 @@
+.nav-link {
+  text-transform: uppercase;
+  font-variant-caps: titling-caps;
+}
+
+mat-toolbar {
+  position: fixed;
+  z-index: 2;
+  background-color: #ffffff;
+}
+
+.page-title {
+  font-weight: 400;
+  border-left: 1px solid #fff;
+  margin-left: 16px;
+  padding-left: 16px;
+}
