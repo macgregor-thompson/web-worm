@@ -1,0 +1,113 @@
+# PRODUCTION ENVIRONMENT API REDIRECTS
+# ------------------------------------
+
+https://app.ninety.io/api/v4/*                https://ta8q8onkp3.execute-api.us-east-1.amazonaws.com/production/:splat  200
+
+https://app.ninety.io/api/seats/*             https://prod-traxion-org-chart.herokuapp.com/api/seats/:splat             200
+https://app.ninety.io/api/seatholders/*       https://prod-traxion-org-chart.herokuapp.com/api/seatholders/:splat       200
+https://app.ninety.io/api/accountabilities/*  https://prod-traxion-org-chart.herokuapp.com/api/accountabilities/:splat  200
+
+https://app.ninety.io/api/measurables/*       https://prod-traxion-measurables.herokuapp.com/api/measurables/:splat     200
+https://app.ninety.io/api/targets/*           https://prod-traxion-measurables.herokuapp.com/api/targets/:splat         200
+https://app.ninety.io/api/goals/*             https://prod-traxion-measurables.herokuapp.com/api/goals/:splat           200
+https://app.ninety.io/api/scorecards/*        https://prod-traxion-scores.herokuapp.com/api/scorecards/:splat           200
+https://app.ninety.io/api/scores/*            https://prod-traxion-scores.herokuapp.com/api/scores/:splat               200
+
+https://app.ninety.io/api/print/*             https://prod-traxion-print.herokuapp.com/api/print/:splat                 200
+https://app.ninety.io/ai/*                    https://prod.ninety.io/ai/:splat                                          200
+
+https://app.ninety.io/auth/ninety/*           https://prod.ninety.io/auth/ninety/:splat                                 200
+https://app.ninety.io/api/*                   https://prod.ninety.io/api/:splat                                         200
+
+
+# STAGING ENVIRONMENT API REDIRECTS (All other APIs fallback to test environment redirects)
+# -----------------------------------------------------------------------------------------
+
+https://staging.app.ninety.io/api/v4/*      https://sg9fpfdlmk.execute-api.us-east-1.amazonaws.com/staging/:splat  200
+
+
+# TEST ENVIRONMENT API REDIRECTS (and fallbacks)
+# ----------------------------------------------
+
+/api/v4/*                https://ebxtq7dhp9.execute-api.us-east-1.amazonaws.com/test/:splat                         200
+
+/api/seats/*             https://traxion-accountability-chart.herokuapp.com/api/seats/:splat                        200
+/api/seatholders/*       https://traxion-accountability-chart.herokuapp.com/api/seatholders/:splat                  200
+/api/accountabilities/*  https://traxion-accountability-chart.herokuapp.com/api/accountabilities/:splat             200
+
+/api/measurables/*       https://traxion-measurables.herokuapp.com/api/measurables/:splat                           200
+/api/targets/*           https://traxion-measurables.herokuapp.com/api/targets/:splat                               200
+/api/goals/*             https://traxion-measurables.herokuapp.com/api/goals/:splat                                 200
+/api/scorecards/*        https://traxion-scores.herokuapp.com/api/scorecards/:splat                                 200
+/api/scores/*            https://traxion-scores.herokuapp.com/api/scores/:splat                                     200
+
+/api/print/*             https://traxion-print.herokuapp.com/api/print/:splat                                       200
+/ai/*                    https://qa.ninety.io/ai/:splat                                                             200
+
+/api/*                   https://qa.ninety.io/api/:splat                                                            200
+/auth/ninety/*           https://qa.ninety.io/auth/ninety/:splat                                                    200
+
+
+# V3 PRODUCTION FRONTEND ENVIRONMENT ASSET REDIRECTS
+# -----------------------------------------------
+
+https://app.ninety.io/manifest.json                   https://v3-front.ninety.io/manifest.json                200
+https://app.ninety.io/images/*                        https://v3-front.ninety.io/images/:splat                200
+https://app.ninety.io/icons/*                         https://v3-front.ninety.io/icons/:splat                 200
+https://app.ninety.io/static/*                        https://v3-front.ninety.io/static/:splat                200
+
+# V3 PRODUCTION FRONTEND ENVIRONMENT ROUTE REDIRECTS
+# -----------------------------------------------
+
+https://app.ninety.io/account                         https://v3-front.ninety.io/index.html                   200
+https://app.ninety.io/organizer                       https://v3-front.ninety.io/index.html                   200
+https://app.ninety.io/reset-password/*                https://v3-front.ninety.io/index.html                   200
+https://app.ninety.io/registration                   https://v3-front.ninety.io/index.html                   200
+https://app.ninety.io/implementer                    https://v3-front.ninety.io/index.html                   200
+
+
+# V3 STAGING FRONTEND ENVIRONMENT ASSET REDIRECTS
+# -----------------------------------------------
+
+https://staging.app.ninety.io/manifest.json           https://staging.v3-front.ninety.io/manifest.json              200
+https://staging.app.ninety.io/images/*                https://staging.v3-front.ninety.io/images/:splat              200
+https://staging.app.ninety.io/icons/*                 https://staging.v3-front.ninety.io/icons/:splat               200
+https://staging.app.ninety.io/static/*                https://staging.v3-front.ninety.io/static/:splat              200
+
+# V3 STAGING FRONTEND ENVIRONMENT ROUTE REDIRECTS
+# -----------------------------------------------
+
+https://staging.app.ninety.io/account                 https://staging.v3-front.ninety.io/index.html                 200
+https://staging.app.ninety.io/organizer               https://staging.v3-front.ninety.io/index.html                 200
+https://staging.app.ninety.io/reset-password/*        https://staging.v3-front.ninety.io/index.html                 200
+https://staging.app.ninety.io/registration            https://staging.v3-front.ninety.io/index.html                 200
+https://staging.app.ninety.io/implementer             https://staging.v3-front.ninety.io/index.html                 200
+
+# V3 TEST FRONTEND ENVIRONMENT ASSET REDIRECTS
+# --------------------------------------------
+
+/manifest.json           https://test.v3-front.ninety.io/manifest.json                                              200
+/images/*                https://test.v3-front.ninety.io/images/:splat                                              200
+/icons/*                 https://test.v3-front.ninety.io/icons/:splat                                               200
+/static/*                https://test.v3-front.ninety.io/static/:splat                                              200
+
+# V3 TEST FRONTEND ENVIRONMENT ROUTE REDIRECTS
+# --------------------------------------------
+
+/account                 https://test.v3-front.ninety.io/index.html                                                 200
+/organizer               https://test.v3-front.ninety.io/index.html                                                 200
+/reset-password/*        https://test.v3-front.ninety.io/index.html                                                 200
+/reset-password          https://test.v3-front.ninety.io/index.html                                                 200
+/registration            https://test.v3-front.ninety.io/index.html                                                 200
+/implementer             https://test.v3-front.ninety.io/index.html                                                 200
+/dashboard/*             https://dashboard.ninety.io/index.html                                                     200
+
+
+# SPA REDIRECT
+# ------------
+
+# ------------------------------------------------------------------------
+# ------------- Make sure to check the redirects.js as well! -------------
+# ------------------------------------------------------------------------
+
+/*                       /index.html                                                                                200

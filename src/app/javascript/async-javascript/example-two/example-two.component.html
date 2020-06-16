@@ -1,0 +1,21 @@
+<h2 class="header">Example #2</h2>
+
+<pre class="line-numbers">
+  <code class="language-javascript">function printHello() &#123;
+      console.log('Hello!');
+  &#125;
+
+  setTimeout(printHello, 0);
+
+  console.log("Hey y'all!");
+  </code>
+</pre>
+
+<button mat-flat-button color="primary" (click)="runCode()">Run Code >></button>
+
+<pre [class.hidden]="!showOutput">
+  <code class="language-javascript">
+  Hey y'all!
+  Hello! // Gotcha!
+  </code>
+</pre>
