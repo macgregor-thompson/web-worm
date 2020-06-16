@@ -17,6 +17,11 @@ export class ExampleThreeComponent implements OnInit {
 
   runCode(): void {
     this.showOutput = true;
+    setTimeout(printHello, 0);
+    blockForOneSec();
+    console.log('Hey y\'all!');
+
+
     function printHello() {
       console.log('Hello!');
     }
@@ -28,10 +33,6 @@ export class ExampleThreeComponent implements OnInit {
       }
       console.log('num:', num);
     }
-
-    setTimeout(printHello, 0);
-    blockForOneSec();
-    console.log('Hey y\'all!');
 
   }
 
