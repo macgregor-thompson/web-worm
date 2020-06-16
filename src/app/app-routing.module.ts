@@ -7,7 +7,7 @@ import { AboutComponent } from './_core/components/about/about.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: { title: 'Articles' } },
-  { path: 'js', loadChildren: () => import('./javascript/javascript.module').then(m => m.JavascriptModule) },
+  { path: 'articles', loadChildren: () => import('./articles/articles.module').then(m => m.ArticlesModule) },
   { path: 'about', component: AboutComponent, data: { title: 'About' } },
   { path: '**', redirectTo: '' }
 ];
