@@ -156,3 +156,11 @@ mat-card.mat-card {
 .indented-list-item {
   margin-left: 32px;
 }
+
+.worm-list {
+  margin-bottom: 16px;
+  mat-list-item {
+    height: 32px;
+  }
+}
+
