@@ -1,0 +1,28 @@
+<h2 class="header">Example #4</h2>
+
+<pre class="line-numbers">
+  <code class="language-javascript">function displayData() &#123;
+    console.log(data);
+  &#125;
+
+  const futureData = fetch('https://macgregor-is-a-procrastinator.com');
+
+  futureData.then(displayData);
+
+  console.log("Hey y'all!");
+
+  </code>
+</pre>
+
+<button mat-flat-button color="primary" (click)="runCode()">Run Code >></button>
+
+<pre [class.hidden]="!showOutput">
+  <code class="language-markup">
+  Hey y'all!
+  Stop Procrastinating! // response
+  </code>
+</pre>
+
+
+
+

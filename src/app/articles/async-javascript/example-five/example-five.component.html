@@ -1,0 +1,39 @@
+<h2 class="header">Example #3</h2>
+
+<pre class="line-numbers">
+  <code class="language-javascript">function displayData() &#123;
+    console.log(data);
+  &#125;
+
+  function blockForOneSec() &#123;
+    let num = 0;
+    for (let i = 0; i < 1000000000; i++) &#123;
+      num = i;
+    &#125;
+    console.log('num:', num);
+  &#125;
+
+  const futureData = fetch('https://macgregor-is-a-procrastinator.com');
+
+  futureData.then(displayData);
+
+  blockForOneSec();
+
+  console.log("Hey y'all!");
+
+  </code>
+</pre>
+
+<button mat-flat-button color="primary" (click)="runCode()">Run Code >></button>
+
+<pre [class.hidden]="!showOutput">
+  <code class="language-markup">
+  num:  999999999
+  Hey y'all!
+  Stop Procrastinating! // response
+  </code>
+</pre>
+
+
+
+
